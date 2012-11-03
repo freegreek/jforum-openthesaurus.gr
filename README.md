@@ -1,4 +1,12 @@
-jforum-openthesaurus.gr
-=======================
+jforum for OpenThesaurus.gr
+===========================
 
-jforum 2.3.4 + customizations for openthesaurus.gr
+Following the example of OpenThesaurus.de we considered it good to include a customized
+version of jforum in the application, so that users can discuss matters related to
+synonyms etc.
+
+Thanks a lot to Daniel Naber, author and maintainer of upstream OpenThesaurus project
+for releasing his customizations to jforum and to the people at 
+http://code.google.com/p/jforum2/ for keeping up with maintainance of jforum (bug
+fixes, updated dependencies etc).
+
