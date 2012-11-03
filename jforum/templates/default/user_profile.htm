@@ -18,7 +18,7 @@
 	</tr>
 
 	<tr>
-		<td class="catleft" align="center" width="40%"><b><span class="gen">${I18n.getMessage("UserProfile.avatar")}</span></b></td>
+		<td class="catleft" align="center" width="40%"><!--<b><span class="gen">${I18n.getMessage("UserProfile.avatar")}</span></b>--></td>
 		<td class="catright" align="center" width="60%"><b><span class="gen">${I18n.getMessage("UserProfile.allAbout")} ${u.username}</span></b></td>
     </tr>
 
@@ -33,6 +33,7 @@
 					<img src="${contextPath}/${avatarPath}/${u.avatar}" alt="avatar" /><br />
 				</#if>
 			</#if>
+<!--
 			<span class="postdetails">
 				${I18n.getMessage("PostShow.ranking")}: ${rank.getRankTitle(u.rankId, u.totalPosts)}
 			
@@ -40,6 +41,7 @@
 					<br />${I18n.getMessage("Karma.karma")}: <script type="text/javascript">writeStars(${u.karma.karmaPoints}, ${u.id});</script>
 				</#if>
 			</span>
+-->
 		</td>
 
 		<td class="row1" valign="top" rowspan="3">
@@ -104,6 +106,7 @@
 				</tr>
 				</#if>
 
+<!--
 				<#if bookmarksEnabled>
 				<tr>
 					<td valign="top" nowrap="nowrap" align="right"><span class="gen">${I18n.getMessage("Bookmarks.myBag")}:</span></td>
@@ -116,10 +119,11 @@
 						</td>
 				</tr>
 				</#if>
+-->
 			</table>
 		</td>
 	</tr>
-    
+<!--
 	<tr>
 		<td class="catleft" align="center"><b><span class="gen">${I18n.getMessage("UserProfile.contact")} ${u.username}</span></b></td>
 	</tr>
@@ -175,5 +179,6 @@
 			</#if>
 		</td>
 	</tr>
+-->
 </table>
 <#include "bottom.htm"/>

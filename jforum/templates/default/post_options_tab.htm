@@ -10,22 +10,29 @@
 		<td><label for="disable_bbcode">${I18n.getMessage("PostForm.disableBbCode")}</label></td>
 	</tr>
 	<tr>
+		<!--
 		<td><input type="checkbox" id="disable_smilies" name="disable_smilies" ${smiliesChecked}/></td>
 		<td><label for="disable_smilies">${I18n.getMessage("PostForm.disableSmilies")}</label></td>
+		-->
+		<td><input type="hidden" id="disable_smilies" name="disable_smilies" value="" /></td>
 	</tr>
 
 	<#if user.id != 1>
+		<!--
 		<tr>
 			<td><input type="checkbox" id="attach_sig" name="attach_sig" ${signatureChecked}/></td>
 			<td><label for="attach_sig">${I18n.getMessage("PostForm.appendSignature")}</label></td>
 		</tr>
+		-->
 
+		<!--
 		<#if forum?exists>
 		<tr>
 			<td><input type="checkbox" id="notify" name="notify" ${repliesChecked}/></td>
 			<td><label for="notify">${I18n.getMessage("PostForm.notifyReplies")}</label></td>
 		</tr>
 		</#if>
+		-->	
 	</#if>
 
 	<#if setType?default(true) && forum?exists && canCreateStickyOrAnnouncementTopics?default(false)>

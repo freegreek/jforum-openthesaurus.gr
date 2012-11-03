@@ -71,7 +71,7 @@
 							<span class="icon_reply_locked"><img src="${contextPath}/images/transp.gif" alt="" /></span>
 						<#else>
 							<#if !readonly>
-								<a href="${JForumContext.encodeURL("/posts/reply/${start}/${topic.id}")}" rel="nofollow" class="icon_reply nav"><img src="${contextPath}/images/transp.gif" alt="" /></a>
+								<a href="${JForumContext.encodeURL("/posts/reply/${start}/${topic.id}")}" rel="nofollow" class="icon_reply nav"><img src="${contextPath}/images/transp.gif" alt="" /></a>&nbsp;
 							<#else>
 								<#assign colspan = "2"/>
 							</#if>
@@ -225,7 +225,7 @@
 						<span class="icon_reply_locked"><img src="${contextPath}/images/transp.gif" alt="" /></span>
 					<#else>
 						<#if !readonly>
-							<a href="${JForumContext.encodeURL("/posts/reply/${start}/${topic.id}")}" rel="nofollow" class="icon_reply nav"><img src="${contextPath}/images/transp.gif" alt="" /></a>
+							<a href="${JForumContext.encodeURL("/posts/reply/${start}/${topic.id}")}" rel="nofollow" class="icon_reply nav"><img src="${contextPath}/images/transp.gif" alt="" /></a>&nbsp;
 						<#else>
 							<#assign colspan = "2"/>
 						</#if>
@@ -366,11 +366,14 @@
 				<tr>
 					<td align="left" valign="top" class="gensmall">
 						<#if logged>
+							<!--
 							<#if bookmarksEnabled>
 								<a href="#bookmark" onclick="addBookmark(2, ${topic.id});"><img src="${contextPath}/templates/${templateName}/images/icon_bookmark.gif" align="middle" alt="Bookmark" />&nbsp;${I18n.getMessage("Bookmarks.addTo")}</a>
 								<br />
 							</#if>
+							-->
 						
+							<!--
 							<#if !watching>
 								<#assign watchMessage = I18n.getMessage("PostShow.watch")/>
 								<a href="#watch" onclick="watchTopic('${JForumContext.encodeURL("/posts/watch/${start}/${topic.id}")}', '${I18n.getMessage("PostShow.confirmWatch")}');">
@@ -379,9 +382,10 @@
 								<a href="${JForumContext.encodeURL("/posts/unwatch/${start}/${topic.id}")}">
 							</#if>
 							<img src="${contextPath}/templates/${templateName}/images/watch.gif" align="middle" alt="Watch" />&nbsp;${watchMessage}</a>
+							-->
 						</#if>
 					</td>
-					<td align="right"><@presentation.forumsComboTable/></td>
+					<!--<td align="right"><@presentation.forumsComboTable/></td>-->
 				</tr>
 			</table>
 		</td>

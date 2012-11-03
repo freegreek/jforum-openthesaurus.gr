@@ -1,22 +1,111 @@
-</td>
-</tr>
-	<tr>
-		<td align="center">
-			<#if session?exists && session.isAdmin()><span class="gen"><a id="adminpanel" href='${JForumContext.encodeURL("/admBase/login")}'>${I18n.getMessage("ForumBase.admin")}</a></span></#if>
-		</td>
-	</tr>
+    </div>
 
-	<tr>
-		<td align="center">
-			<span class="copyright">Powered by <a class="copyright" href="http://jforum2.googlecode.com/" target="_blank">JForum ${version}</a> &copy; 2012 <a class="copyright" href="http://jforum.net/team.jsp" target="_blank">JForum Team</a> &bull; Maintained by <a class="copyright" href="http://www.andowson.com/" target="_blank">Andowson.com</a></span>
-		</td>
-	</tr>
-</table>
+  </div>
 
-<#if hasCodeBlock?default(false)>
-	<#include "highlighter_js.htm"/>
-</#if>
+  <div id="foot">
+  <table width="800">
 
+    <tr>
+      <td height="120" width="370" class="claim" colspan="2">
+        <div style="margin-bottom: 20px">
+          Το OpenThesaurus.gr είναι μια ελεύθερη βάση δεδομένων συνωνύμων όπου καθένας μπορεί να συμμετέχει
+        </div>
+      </td>
+      <td width="60"></td>
+      <td width="370" class="visualads">
+      </td>
+    </tr>
+    <tr>
+
+      <td colspan="2">
+        <img style="width:100%;height:2px;margin-bottom:20px" src="/images/hr.png" alt="Trennlinie"/>
+      </td>
+      <td></td>
+      <td>
+        <img style="width:100%;height:2px;margin-bottom:20px" src="/images/hr.png" alt="Trennlinie"/>
+      </td>
+    </tr>
+    <tr>
+
+      <td width="270">
+        <ul>
+          <li><a href="/about/index">Περί OpenThesaurus</a></li>
+          <li><a href="/about/faq">FAQ</a></li>
+          <li><a href="/about/newsarchive">Νέα</a></li>
+          <li><a href="/userEvent/list">Αρχείο Αλλαγών</a></li>
+          <li><a href="/synset/statistics">Στατιστικά</a></li>
+          <li><a href="/about/api">API</a></li>
+          <li><a href="/about/download">Λήψη</a></li>
+        </ul>
+      </td>
+      <td width="130">
+        <div class="iconLink">
+          <table>
+            <tr>
+            
+                <td>
+                </td>
+
+                <td>&nbsp;</td>
+                <td>
+                </td>
+            
+            </tr>
+          </table>
+        </div>
+
+        <div class="iconLink">
+          <table>
+            <tr>
+              <td>
+                <script type="text/javascript">
+                <!--
+                var firstPart = "feedback";
+                var lastPart = "openthesaurus.gr";
+                document.write("<a href='mail" + "to:" + firstPart + "@" + lastPart + "'><img src=\"/images/icon-mail.png\" alt=\"Επικοινωνία\"/><" + "/a>");
+                // -->
+                </script>
+              </td>
+              <td>&nbsp;</td>
+              <td>
+
+                <script type="text/javascript">
+                <!--
+                var firstPart = "feedback";
+                var lastPart = "openthesaurus.gr";
+                document.write("<a class=\"lightlink\" href='mail" + "to:" + firstPart + "@" + lastPart + "'>Γράψτε μας ένα <strong>E-Mail<" + "/strong><" + "/a>");
+                // -->
+                </script>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="iconLink">
+          <table>
+            <tr>
+              <td><a href="http://twitter.com/openthesaurusgr"><img src="/images/icon-twitter.png" alt="Twitter-Icon"/></a></td>
+              <td>&nbsp;</td>
+              <td><a class="lightlink" href="http://twitter.com/openthesaurusgr">Ακολουθήστε μας στο <strong>twitter</strong></a></td>
+            </tr>
+          </table>
+        </div>
+        
+      </td>
+      <td>
+
+      </td>
+      <td>
+        
+            
+
+        
+      </td>
+
+    </tr>
+  </table>
+</div>
+
+<#if session?exists && session.isAdmin()><span class="gen"><a id="adminpanel" href='${JForumContext.encodeURL("/admBase/login")}'>${I18n.getMessage("ForumBase.admin")}</a></span></#if>
 <iframe src="${contextPath}/ping_session.jsp" height="0" width="0" frameborder="0" scrolling="no" title="session keeper"></iframe>
 
 </body>

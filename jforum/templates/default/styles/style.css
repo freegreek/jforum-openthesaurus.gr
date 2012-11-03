@@ -1,15 +1,10 @@
 img, table { border: 0px; }
-font, th, td, p { font-family: verdana, arial, helvetica, sans-serif; }
+font, th, td, p { font-family: Arial, Helvetica, Verdana, sans-serif; }
 
-/* Links */
-a:link   { color: #01336b; text-decoration: none; }
-a:active { color: #01336b; }
-a:visited{ color: #01336b; text-decoration: none; }
-a:hover  { color: #dd6900; text-decoration: underline; }
 
 hr         { border: #dfdfdf 1px solid; height: 0px; }
-.bodyline  { border: #cccccc 1px solid; }
-.forumline { border: #006699 2px solid; }
+.bodyline  { border: #cccccc 0px solid; }
+.forumline { border: #006699 0px solid; }
 
 /* td */
 table.forumlist td.row1 { height: 50px; }
@@ -243,7 +238,7 @@ table.attachtable	{ font: normal 12px verdana, arial, helvetica, sans-serif; col
 }
 
 blockquote dl.codebox code { font-size: 1.0em; }
-input.subject, textarea.message { width: 100%; }
+input.subject, textarea.jforumMessage { width: 100%; }
 .postTabContents { padding-top: 24px; }
 .postTabContents div { background-color: #E5EDF3; }
 

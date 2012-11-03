@@ -202,6 +202,7 @@
 							<span class="topictitle">
 							<a href="${JForumContext.encodeURL("/posts/list/${topic.id}")}">
 							<#if topic.vote>${I18n.getMessage("ForumListing.pollLabel")}</#if>
+                                                        &nbsp;
 							<#if (topic.title?length == 0)>
 								No Subject
 							<#else>
@@ -272,7 +273,7 @@
 					</#if>
 
 					<td valign="middle" align="left" colspan="${colspan?default("0")}">
-						<span class="nav">
+						&nbsp;<span class="nav">
 						<a class="nav" href="${JForumContext.encodeURL("/forums/list")}">${I18n.getMessage("ForumListing.forumIndex")}</a> &raquo;  <a class="nav" href="${JForumContext.encodeURL("/forums/show/${forum.id}")}">${forum.name?html}</a></span>
 					</td>
 
@@ -284,6 +285,7 @@
 				</tr>
 			</table>
 
+<!--
 			<table cellspacing="0" cellpadding="5" width="100%">
 				<tr>
 					<td align="left" class="gensmall">
@@ -301,7 +303,8 @@
 					<td align="right"><@presentation.forumsComboTable/></td>
 				</tr>
 			</table>
-
+-->
+<!--
 			<table cellspacing="0" cellpadding="0" width="100%" align="center">
 				<tr>
 					<td valign="top" align="left">
@@ -319,6 +322,7 @@
 					</#if>
 				</tr>
 			</table>
+-->
 		</td>
 	</tr>
 </table>
