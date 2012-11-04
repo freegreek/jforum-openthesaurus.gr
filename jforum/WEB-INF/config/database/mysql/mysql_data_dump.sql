@@ -14,7 +14,7 @@ INSERT INTO jforum_groups ( group_id, group_name, group_description ) VALUES (@A
 # Users
 #
 INSERT INTO jforum_users ( user_id, username, user_password, user_regdate ) VALUES (@ANONYMOUS_ID, 'Anonymous', 'nopass', NOW());
-INSERT INTO jforum_users ( user_id, username, user_password, user_regdate, user_posts ) VALUES (@ADMIN_ID, 'Admin', '21232f297a57a5a743894a0e4a801fc3', NOW(), 1);
+INSERT INTO jforum_users ( user_id, username, user_password, user_regdate, user_email, user_posts ) VALUES (@ADMIN_ID, 'Admin', '21232f297a57a5a743894a0e4a801fc3', NOW(), 'admin@openthesaurus.gr', 1);
 
 #
 # User Groups
@@ -61,12 +61,11 @@ INSERT INTO jforum_smilies (code, url, disk_name) VALUES (':|', '<img src=\"#CON
 #
 # Demonstration Forum
 #
-INSERT INTO jforum_categories VALUES (1,'Category Test',1,0);
-INSERT INTO jforum_forums VALUES (1,1,'Test Forum','This is a test forum',1,1,1,0);
-INSERT INTO jforum_topics VALUES (1,1,'Welcome to JForum',2,NOW(),0,0,0,0,0,1,1,0,0);
+INSERT INTO jforum_categories VALUES (1,'OpenThesaurus',1,0);
+INSERT INTO jforum_forums VALUES (1,1,'OpenThesaurus.gr Forum','Forum of OpenThesaurus.gr',1,1,1,0);
+INSERT INTO jforum_topics VALUES (1,1,'Καλώς ήρθατε στο forum του OpenThesaurus',2,NOW(),0,0,0,0,0,1,1,0,0);
 INSERT INTO jforum_posts VALUES (1,1,1,2,NOW(),'127.0.0.1',1,0,1,1,null,0,1,0,0);
-INSERT INTO jforum_posts_text VALUES (1,'[b][color=blue][size=18]Congratulations :!: [/size][/color][/b]\nYou have completed the installation, and JForum is up and running. \n\nTo start administering the board, login as [i]Admin / <the password you supplied in the installer>[/i] and access the [b][url=/admBase/login.page]Admin Control Panel[/url][/b] using the link that shows up in the bottom of the page. There you will be able to create Categories, Forums and much more  :D  \n\nFor more information and support, please refer to the following pages:\n\n:arrow: Community forum: http://jforum.andowson.com/\n:arrow: Documentation: http://code.google.com/p/jforum2/w/list\n\nThank you for choosing JForum.\n\n[url=http://jforum.net/team.jsp]The JForum Team[/url]\n\n','Welcome to JForum');
-
+INSERT INTO jforum_posts_text VALUES (1,'Καλώς ήρθατε στο φόρουμ του OpenThesaurus.\n\nΣκοπός αυτού του φόρουμ είναι οι συζητήσεις γύρω από τα συνώνυμα κλπ','Καλώς ήρθατε στο φόρουμ του OpenThesaurus!');
 #
 # Roles
 #
