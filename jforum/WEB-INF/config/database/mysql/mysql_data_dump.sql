@@ -107,9 +107,6 @@ INSERT INTO jforum_role_values (role_id, role_value) VALUES (LAST_INSERT_ID(), '
 #
 # Anonymous posts
 #
-INSERT INTO jforum_roles (name, group_id) VALUES ('perm_anonymous_post', @GENERAL_GROUP_ID);
-INSERT INTO jforum_role_values (role_id, role_value ) VALUES (LAST_INSERT_ID(), '1');
-
 INSERT INTO jforum_roles (name, group_id) VALUES ('perm_anonymous_post', @ADMIN_GROUP_ID);
 INSERT INTO jforum_role_values (role_id, role_value ) VALUES (LAST_INSERT_ID(), '1');
 
